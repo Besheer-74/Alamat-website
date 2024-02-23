@@ -77,3 +77,20 @@ document.addEventListener("DOMContentLoaded", function() {
         intervalId = setInterval(changeBackgroundAndText, intervalDuration);
     });
 });
+// JavaScript for toggling mobile navigation and closing the menu when a link is clicked
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Close the mobile navigation menu when a link is clicked
+const navLinksList = document.querySelectorAll('.nav-links ul li a');
+
+navLinksList.forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+    });
+});
+

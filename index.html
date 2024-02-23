@@ -4,30 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <title>ALAMAT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
   </head>
 <body>
-    <!-- Header / nav bar -->
-    <section class="header" id="home">
-        <nav>
-            <a href="index.html"><img src="assets/alamaat1.png"></a>
-            <div class="nav-links">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact us</a></li>
-                </ul>
-            </div>
-        </nav>
+    <div id="preloader">
 
-        <div class="text-box">
-            <h1 id="header-text">KENAN</h1>
-            <a href="project.html" class="hero_btn">Learn more</a>
+    </div>
+    <!-- Header / nav bar -->
+<section class="header" id="home">
+    <nav>
+        <a href="index.html"><img src="assets/alamaat1.png"></a>
+        <!-- Toggle button for mobile navigation -->
+        <div class="menu-toggle">
+            <i class="fa fa-bars"></i>
         </div>
-    </section>
+        <div class="nav-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="text-box">
+        <h1 id="header-text">KENAN</h1>
+    </div>
+</section>
+
     <!-- About us -->
     <section class="about" id="about">
         <h1>About us</h1>
@@ -75,10 +86,10 @@
         <h1>Contact us at<h1>
             <div class="icons">
         <a href="https://api.whatsapp.com/send?phone=%2B966547357829&data=ARBA6vzgO8khtEEyE_-oU7-K8lrR4zhp-sTpu-IUqn0ipIgcmzy5We-ph6H0Tp1QPvHrUZDZa0YyKiHvjGtlF22cptb6avY5VDWCvNWxuK7cWq4TU9JsTCricVQKh2hGDbNzvUS54f7j71GIYxTMaq77WA&source=FB_Page&app=facebook&entry_point=page_cta"><img src="assets/whatsapp.png" alt="Whatsapp"></a>
-        <a href=""><img src="assets/Facebook.png" alt="Facebook"></a>
-        <a href=""><img src="assets/Email.png" alt="Email"></a>
-        <a href=""><img src="assets/Phone.png" alt="Phone"></a>
-        <a href=""><img src="assets/linkedin.png" alt="Linkedin"></a>
+        <a href="https://www.facebook.com/profile.php?id=100083152397880"><img src="assets/Facebook.png" alt="Facebook"></a>
+        <a href="mailto:alamaateg@gmail.com"><img src="assets/Email.png" alt="Email"></a>
+        <a href="tel:+2001024033535"><img src="assets/Phone.png" alt="Phone"></a>
+        <a href="https://www.linkedin.com/in/alamat-developments-85b8342b6/"><img src="assets/linkedin.png" alt="Linkedin"></a>
 
         </div>
 <!-- footer -->
@@ -91,6 +102,11 @@
 </section>
 
     <script src="script.js"></script>
-
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+        loader.style.display = "none";
+    })
+</script>
 </body>
 </html>

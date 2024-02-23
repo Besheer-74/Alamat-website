@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="Kenanstyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +13,9 @@
 </head>
 
 <body>
+    <div id="preloader">
+
+    </div>
     <section class="header" id="home">
         <nav>
             <a href="index.html"><img src="assets/alamaat1.png"></a>
@@ -36,17 +43,24 @@
         <div class="about-col">
             <img src="assets/3.jpg">
         </div>
-    </div>
-
-
-
-    <div class="row">
-        <div class="about-col1">
-            <h1>KENAN</h1>
-            <p>A tower in the new capital of Egypt</p>
-        </div>
-        <div class="about-col1">
-            <img src="assets/2.jpg">
-        </div>
-    </div>
+    </div>    
     </section>
+ 
+<!-- footer -->
+<section>
+    <footer class="footer">
+    <div class="alamat">
+        <img src="assets/alamaat1.png" alt="alamaat">
+         <p>All copyright reserved for alamaat.com</p>
+    </div>
+   </footer>
+</section>
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+        loader.style.display = "none";
+    })
+</script>
+</body>
+</html>
+    
