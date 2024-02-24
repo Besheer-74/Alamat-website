@@ -94,3 +94,26 @@ navLinksList.forEach(link => {
     });
 });
 
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+})
+
+// JavaScript code to change navigation bar color on scroll
+
+// Get the navigation bar element
+const navBar = document.querySelector('nav');
+
+// Function to toggle the class based on scroll position
+function toggleNavBarColor() {
+    if (window.scrollY > 0) {
+        // Add the 'nav-scrolled' class when scrolled down
+        navBar.classList.add('nav-scrolled');
+    } else {
+        // Remove the 'nav-scrolled' class when scrolled to the top
+        navBar.classList.remove('nav-scrolled');
+    }
+}
+
+// Event listener for scroll event
+window.addEventListener('scroll', toggleNavBarColor);
