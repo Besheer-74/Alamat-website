@@ -220,7 +220,11 @@ nav img {
     float: right;
     margin-bottom: 50px;
 }
-
+@media(max-width: 700px) {
+    .container {
+        flex-direction: column;
+    }
+}
 
 
 .Contact {
@@ -269,8 +273,6 @@ nav img {
     .Contact h1 {
         font-size: 24px;
     }
-<<<<<<< HEAD
-=======
 
 }
 .about-col {
@@ -288,7 +290,7 @@ nav img {
 .about-col p {
     padding: 15px 0;
     color: #fff;
->>>>>>> 18e9e7bde8955fe35a4134820b175eae02ccd8a0
+
 }
 
 .footer {
@@ -303,10 +305,7 @@ nav img {
     font-size: 12px;
     color: #fff;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 18e9e7bde8955fe35a4134820b175eae02ccd8a0
 .alamat img,
 .alamat p {
     display: inline-block;
@@ -328,8 +327,6 @@ nav img {
     z-index: 100;
 }
 
-<<<<<<< HEAD
-=======
 
 .container{
     width: 90%;
@@ -399,4 +396,4 @@ nav img {
 .learn-more-button a:hover {
     background-color: #cc9955; /* Button color on hover */
 }
->>>>>>> 18e9e7bde8955fe35a4134820b175eae02ccd8a0
+
