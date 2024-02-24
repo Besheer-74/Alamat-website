@@ -94,11 +94,14 @@ navLinksList.forEach(link => {
     });
 });
 
+<<<<<<< HEAD
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function(){
     loader.style.display = "none";
 })
 
+=======
+>>>>>>> 18e9e7bde8955fe35a4134820b175eae02ccd8a0
 // JavaScript code to change navigation bar color on scroll
 
 // Get the navigation bar element
@@ -116,4 +119,10 @@ function toggleNavBarColor() {
 }
 
 // Event listener for scroll event
+<<<<<<< HEAD
 window.addEventListener('scroll', toggleNavBarColor);
+=======
+window.addEventListener('scroll', toggleNavBarColor);
+
+
+>>>>>>> 18e9e7bde8955fe35a4134820b175eae02ccd8a0
